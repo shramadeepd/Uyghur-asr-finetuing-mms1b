@@ -1,0 +1,11 @@
+transformers==4.56.2
+torch
+torchaudio
+datasets
+evaluate
+jiwer
+accelerate
+soundfile
+librosa
+pandas
+scikit-learn
