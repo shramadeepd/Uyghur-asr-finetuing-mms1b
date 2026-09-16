@@ -12,6 +12,7 @@
 
 [Notebook](notebooks/uyghur-asr-mms1b-annotated.ipynb) ·
 [Model](https://huggingface.co/Shramadeepd/wav2vec-ug-finetuned-1b) ·
+[Dataset](https://huggingface.co/Shramadeepd/uyghur-ASR-dataset) ·
 [Approach](#approach) ·
 [Results](#results) ·
 [Quick start](#quick-start)
@@ -128,7 +129,7 @@ Uyghur-asr-finetuing-mms1b/
 ├── requirements.txt
 ├── .gitignore
 ├── notebooks/
-│   └── uyghur-asr-mms1b-annotated.ipynb    # full annotated pipeline
+│   └── uyghur-asr-finetuned.ipynb    # full annotated pipeline
 └── submissions/
     └── submission.csv                       # final predictions (0.0517 CER)
 ```
@@ -140,7 +141,7 @@ Uyghur-asr-finetuing-mms1b/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/Uyghur-asr-finetuing-mms1b.git
+git clone https://github.com/shramadeepd/Uyghur-asr-finetuing-mms1b.git
 cd Uyghur-asr-finetuing-mms1b
 pip install -r requirements.txt
 ```
@@ -169,7 +170,7 @@ print(processor.batch_decode(torch.argmax(logits, dim=-1))[0])
 
 ### Reproducing training
 
-Open `notebooks/uyghur-asr-mms1b-annotated.ipynb` on Kaggle or Colab with a T4 runtime, point
+Open `notebooks/uyghur-asr-finetuned.ipynb` on Kaggle or Colab with a T4 runtime, point
 `DATA_DIR` at the dataset, and run top to bottom. Every cell is documented with the reasoning
 behind it.
 
@@ -215,7 +216,7 @@ Ordered by expected CER reduction per unit of effort:
 - [`ixxan/wav2vec2-large-mms-1b-uyghur-latin`](https://huggingface.co/ixxan/wav2vec2-large-mms-1b-uyghur-latin) — base checkpoint
 - [Massively Multilingual Speech (MMS)](https://arxiv.org/abs/2305.13516), Meta AI
 - [wav2vec 2.0](https://arxiv.org/abs/2006.11477), Baevski et al.
-- NPPE-2 Uyghur ASR Challenge organisers
+- NPPE-2 Uyghur ASR Challenge organisers - DLP team IITM BS
 
 ## License
 
