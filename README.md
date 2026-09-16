@@ -122,7 +122,7 @@ to linearly separable into the correct characters. The head only had to find the
 ## Repository structure
 
 ```
-uyghur-asr-mms1b/
+Uyghur-asr-finetuing-mms1b/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
@@ -140,8 +140,8 @@ uyghur-asr-mms1b/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/uyghur-asr-mms1b.git
-cd uyghur-asr-mms1b
+git clone https://github.com/<your-username>/Uyghur-asr-finetuing-mms1b.git
+cd Uyghur-asr-finetuing-mms1b
 pip install -r requirements.txt
 ```
 
