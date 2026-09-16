@@ -12,7 +12,7 @@
 
 [Notebook](notebooks/uyghur-asr-mms1b-annotated.ipynb) ·
 [Model](https://huggingface.co/Shramadeepd/wav2vec-ug-finetuned-1b) ·
-[Dataset](https://huggingface.co/Shramadeepd/uyghur-ASR-dataset) ·
+[Dataset](https://huggingface.co/datasets/Shramadeepd/uyghur-ASR-dataset) ·
 [Approach](#approach) ·
 [Results](#results) ·
 [Quick start](#quick-start)
